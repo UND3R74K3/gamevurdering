@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roulette</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="money-display">Penger: $<span id="money">1000</span></div>
+        <canvas id="roulette-board"></canvas>
+        <div id="controls">
+            <button onclick="placeBet(10)">Sett $10</button>
+            <button onclick="placeBet(50)">Sett $50</button>
+            <button onclick="placeBet(100)">Sett $100</button>
+            <button onclick="spinWheel()">Spinn</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
