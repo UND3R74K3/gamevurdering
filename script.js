@@ -11,7 +11,6 @@ function drawBoard() {
     ctx.fillStyle = "green";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    // Tegner roulette ruter (Enkel versjon)
     let colors = ["red", "black"];
     for (let i = 0; i < 12; i++) {
         ctx.fillStyle = colors[i % 2];
@@ -45,6 +44,8 @@ canvas.addEventListener("click", function (event) {
 });
 
 function drawBets() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawBoard();
     for (let bet of bets) {
         ctx.fillStyle = "blue";
         ctx.beginPath();
@@ -53,9 +54,25 @@ function drawBets() {
     }
 }
 
+function allIn(color) {
+    if (money > 0) {
+        bets = [{ type: color, amount: money }];
+        money = 0;
+        document.getElementById("money").innerText = money;
+        console.log(`All in på ${color}!`);
+    } else {
+        alert("Ingen penger igjen!");
+    }
+}
+
 function spinWheel() {
     let winningNumber = Math.floor(Math.random() * 12) + 1;
-    alert(`Vinnende nummer: ${winningNumber}`);
+    let winningColor = winningNumber % 2 === 0 ? "black" : "red";
+    alert(`Vinnende nummer: ${winningNumber} (${winningColor})`);
+
+    // Fjerner tidligere bets
+    bets = [];
+    drawBets();
 }
 
 drawBoard();

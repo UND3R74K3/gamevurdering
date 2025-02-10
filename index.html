@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roulette</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="game-container">
         <div id="money-display">Penger: $<span id="money">1000</span></div>
         <canvas id="roulette-board"></canvas>
         <div id="controls">
-            <button onclick="placeBet(10)">Sett $10</button>
-            <button onclick="placeBet(50)">Sett $50</button>
-            <button onclick="placeBet(100)">Sett $100</button>
-            <button onclick="spinWheel()">Spinn</button>
+            <button class="chip red" onclick="placeBet(10)">Sett $10</button>
+            <button class="chip blue" onclick="placeBet(50)">Sett $50</button>
+            <button class="chip green" onclick="placeBet(100)">Sett $100</button>
+            <button class="all-in black" onclick="allIn('black')">All in Black</button>
+            <button class="all-in red" onclick="allIn('red')">All in Red</button>
+            <button class="spin" onclick="spinWheel()">Spinn</button>
         </div>
     </div>
     <script src="script.js"></script>

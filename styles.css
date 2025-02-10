@@ -31,7 +31,17 @@ canvas {
 
 button {
     margin: 5px;
-    padding: 10px;
+    padding: 10px 15px;
     font-size: 16px;
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
 }
+
+.chip.red { background-color: red; }
+.chip.blue { background-color: blue; }
+.chip.green { background-color: green; }
+.all-in.black { background-color: black; }
+.all-in.red { background-color: darkred; }
+.spin { background-color: gold; color: black; }
