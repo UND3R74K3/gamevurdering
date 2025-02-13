@@ -1,0 +1,103 @@
+html, body{
+	font-family: arial;
+	cursor: default;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#container{
+	display: flex;
+	justify-content: center;
+	background-color: #016D29;
+	height: 470px;
+	padding: 20px;
+	color: #fff;
+}
+
+/*notification*/
+#notification{
+	position: absolute;
+	width: 500px;
+	height: 318px;
+	background-color: #ad0205;
+	z-index: 10;
+	border: 8px solid #d3b201;
+	border-radius: 12px;
+	transition: 1s;
+}
+
+.nSpan{
+	display: block;
+	position: relative;
+	top: 105px;
+	font-size: 53px;
+	text-align: center;
+}
+
+.nBtn{
+	display: block;
+	position: relative;
+	top: 116px;
+	left: 25%;
+	width: 45%;
+	padding: 10px;
+	font-size: 32px;
+	text-align: center;
+	background-color: green;
+	border-radius: 15px;
+	box-shadow: 3px 4px rgb(0 0 0 / 25%);
+	cursor: pointer;
+	transition: .5s;
+}
+
+.nBtn:active{
+	top: 118px;
+	left: calc(25% + 2px);
+	box-shadow: 1px 2px rgb(0 0 0 / 25%);
+}
+
+.nsWin{
+	position:absolute;
+	left: 4px;
+}
+
+.nsWinBlock{
+	display: inline-block;
+	font-size: 21px;
+	border-right: 1px solid;
+	border-left: 1px solid;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+/*notification end*/
+
+/*betting table*/
+#betting_board{
+	width: 500px;
+    height: 315px;
+    border: 1px solid;
+}
+
+.bbtop{
+	margin-left:2px;
+}
+
+.bbtoptwo{
+	width: calc(50% - 8px);
+	border: 1px solid;
+	display: inline-block;
+	padding: 12px 4px;
+	margin-left: -2px;
+	text-align: center;
+	font-size:20px;
+	font-weight: bold;
+}
+
+.number_board{
+	margin-left: 1px;
+}
+
