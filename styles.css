@@ -15,7 +15,7 @@ html, body{
 	background-color: #016D29;
 	height: 470px;
 	padding: 20px;
-	color: #ffffff9b;
+	color: #ffffff;
 }
 
 /*notification*/
@@ -23,11 +23,11 @@ html, body{
 	position: absolute;
 	width: 500px;
 	height: 318px;
-	background-color: #ad02059a;
+	background-color: #d00408;
 	z-index: 10;
 	border: 8px solid #d3b3018d;
 	border-radius: 12px;
-	transition: 1s;
+	transition: 2s;
 }
 
 .nSpan{
@@ -51,7 +51,7 @@ html, body{
 	border-radius: 15px;
 	box-shadow: 3px 4px rgb(0 0 0 / 25%);
 	cursor: pointer;
-	transition: .5s;
+	transition: .75s;
 }
 
 .nBtn:active{
@@ -276,11 +276,11 @@ html, body{
 }
 
 .redNum{
-	background-color: #000000;
+	background-color: #e40808;
 }
 
 .blackNum{
-	background-color: #f71a1a;
+	background-color: #000000;
 }
 
 .chipDeck, .bankContainer{
